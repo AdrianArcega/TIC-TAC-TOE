@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace TIC_TAC_TOE_
 {
     public partial class Form1 : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
+
         bool turn = true; //true = A turn; false = B turn
         int turn_count = 0;
         public Form1()
         {
             InitializeComponent();
+            player.URL = "Tic tac toe.mp3";
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -58,7 +62,7 @@ namespace TIC_TAC_TOE_
                 weHaveAWinner = true;
             if (weHaveAWinner)
             {
-                disableButtons();
+                disablingButtons();
                 String winner = "";
                 if (turn)
                     winner = "O";
@@ -72,32 +76,38 @@ namespace TIC_TAC_TOE_
                     MessageBox.Show("Draw", "Nice try!");
             }//end of else 
         }//end of weHaveAWinner
-        private void disableButtons()
+        private void disablingButtons()
         {
-            try
+            foreach (Control c in Controls)
             {
-                foreach (Control c in Controls)
-                {
                     Button x = (Button)c;
                     x.Enabled = false;
-                }//end foreach
-            }//end try
-            catch { }
+            }//end foreach
         }
         private void resetButtonClick(object sender, EventArgs e)
         {
             turn = true;
             turn_count = 0;
-            foreach (Control c in Controls)
+
+            try
             {
-                Button x = (Button)c;
-                x.Enabled = true;
-                x.Text = "";
-            }//end foreach
+                foreach (Control c in Controls)
+                {
+                    Button x = (Button)c;
+                    x.Enabled = true;
+                    x.Text = "";
+                }//end foreach
+            }//end try
+            catch { }
         }
         private void exitButtonClick(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            player.controls.play();
         }
     }
 }

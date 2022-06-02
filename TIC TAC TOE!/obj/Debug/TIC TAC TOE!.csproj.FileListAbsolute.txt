@@ -9,3 +9,8 @@ C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.cspr
 C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.exe
 C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.pdb
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\bin\Debug\Interop.WMPLib.dll
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\Interop.WMPLib.dll
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.csproj.ResolveComReference.cache
