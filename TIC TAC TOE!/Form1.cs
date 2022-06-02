@@ -44,6 +44,13 @@ namespace TIC_TAC_TOE_
                 weHaveAWinner = true;
             else if ((button_7.Text == button_8.Text) && (button_8.Text == button_9.Text) && (!button_7.Enabled))
                 weHaveAWinner = true;
+            //checking vertically
+            else if ((button_1.Text == button_4.Text) && (button_4.Text == button_7.Text) && (!button_1.Enabled))
+                weHaveAWinner = true;
+            else if ((button_2.Text == button_5.Text) && (button_5.Text == button_8.Text) && (!button_2.Enabled))
+                weHaveAWinner = true;
+            else if ((button_3.Text == button_6.Text) && (button_6.Text == button_9.Text) && (!button_3.Enabled))
+                weHaveAWinner = true;
             if (weHaveAWinner)
             {
                 String winner = "";
