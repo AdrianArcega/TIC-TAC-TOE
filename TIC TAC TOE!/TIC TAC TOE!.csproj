@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ori_3519461_7f53d389c070c12236a18e13693a1c9b1292b001_pixel-8bit-game-vector-background-with-ground-and-cloudy-sky-panorama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01073865290819.5d61d475f0072.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro-space-arcade-game-invaders-spaceship-pixel-vector-23292502.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

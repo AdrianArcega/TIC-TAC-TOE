@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\bin\Debug\TIC TAC TOE!.exe.config
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\bin\Debug\TIC TAC TOE!.exe
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\bin\Debug\TIC TAC TOE!.pdb
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC_TAC_TOE_.Form1.resources
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC_TAC_TOE_.Properties.Resources.resources
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.csproj.GenerateResource.cache
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.exe
+C:\Users\user\source\repos\TIC TAC TOE!\TIC TAC TOE!\obj\Debug\TIC TAC TOE!.pdb
