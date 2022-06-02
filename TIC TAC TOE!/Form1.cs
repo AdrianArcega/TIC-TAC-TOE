@@ -51,8 +51,14 @@ namespace TIC_TAC_TOE_
                 weHaveAWinner = true;
             else if ((button_3.Text == button_6.Text) && (button_6.Text == button_9.Text) && (!button_3.Enabled))
                 weHaveAWinner = true;
+            //checking diagonally
+            else if ((button_1.Text == button_5.Text) && (button_5.Text == button_9.Text) && (!button_1.Enabled))
+                weHaveAWinner = true;
+            else if ((button_3.Text == button_5.Text) && (button_5.Text == button_7.Text) && (!button_3.Enabled))
+                weHaveAWinner = true;
             if (weHaveAWinner)
             {
+                disableButtons();
                 String winner = "";
                 if (turn)
                     winner = "O";
@@ -66,5 +72,32 @@ namespace TIC_TAC_TOE_
                     MessageBox.Show("Draw", "Nice try!");
             }//end of else 
         }//end of weHaveAWinner
+        private void disableButtons()
+        {
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button x = (Button)c;
+                    x.Enabled = false;
+                }//end foreach
+            }//end try
+            catch { }
+        }
+        private void resetButtonClick(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
+            foreach (Control c in Controls)
+            {
+                Button x = (Button)c;
+                x.Enabled = true;
+                x.Text = "";
+            }//end foreach
+        }
+        private void exitButtonClick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
