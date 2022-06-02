@@ -53,6 +53,11 @@ namespace TIC_TAC_TOE_
                     winner = "X";
                 MessageBox.Show(winner + " is the winner!", "Winner winner chicken dinner!!");
             }//end of if
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("Draw", "Nice try!");
+            }//end of else 
         }//end of weHaveAWinner
     }
 }
