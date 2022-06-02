@@ -21,7 +21,7 @@ namespace TIC_TAC_TOE_
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }//app closed
         private void button_clicked(object sender, EventArgs e)
         {
             Button x = (Button)sender;
@@ -30,6 +30,29 @@ namespace TIC_TAC_TOE_
             else
                 x.Text = "O";
             turn = !turn;
-        }
+            x.Enabled = false;
+            turn_count++;
+            doWeHaveAWinner();
+        }//end of if
+        private void doWeHaveAWinner()
+        {
+            bool weHaveAWinner = false;
+            //checking horizontally
+            if ((button_1.Text == button_2.Text) && (button_2.Text == button_3.Text) && (!button_1.Enabled))
+                weHaveAWinner = true;
+            else if ((button_4.Text == button_5.Text) && (button_5.Text == button_6.Text) && (!button_4.Enabled))
+                weHaveAWinner = true;
+            else if ((button_7.Text == button_8.Text) && (button_8.Text == button_9.Text) && (!button_7.Enabled))
+                weHaveAWinner = true;
+            if (weHaveAWinner)
+            {
+                String winner = "";
+                if (turn)
+                    winner = "O";
+                else 
+                    winner = "X";
+                MessageBox.Show(winner + " is the winner!", "Winner winner chicken dinner!!");
+            }//end of if
+        }//end of weHaveAWinner
     }
 }
