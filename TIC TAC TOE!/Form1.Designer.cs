@@ -40,6 +40,7 @@
             this.button_7 = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_1
@@ -119,13 +120,22 @@
             resources.ApplyResources(this.resetButton, "resetButton");
             this.resetButton.Name = "resetButton";
             this.resetButton.UseVisualStyleBackColor = true;
-            this.resetButton.Click += new System.EventHandler(this.resetButtonClick);
+            this.resetButton.Click += new System.EventHandler(this.restartButtonClick);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::TIC_TAC_TOE_.Properties.Resources.ori_3519461_7f53d389c070c12236a18e13693a1c9b1292b001_pixel_8bit_game_vector_background_with_ground_and_cloudy_sky_panorama;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.resetButtonClicked);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TIC_TAC_TOE_.Properties.Resources._01073865290819_5d61d475f0072;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.button_9);
@@ -158,6 +168,7 @@
         private System.Windows.Forms.Button button_7;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -14,7 +14,7 @@ namespace TIC_TAC_TOE_
     public partial class Form1 : Form
     {
         WindowsMediaPlayer player = new WindowsMediaPlayer();
-
+        int counter = 0;
         bool turn = true; //true = A turn; false = B turn
         int turn_count = 0;
         public Form1()
@@ -22,10 +22,6 @@ namespace TIC_TAC_TOE_
             InitializeComponent();
             player.URL = "Tic tac toe.mp3";
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }//app closed
         private void button_clicked(object sender, EventArgs e)
         {
             Button x = (Button)sender;
@@ -68,18 +64,16 @@ namespace TIC_TAC_TOE_
                 else 
                     winner = "X";
                 MessageBox.Show(winner + " is the winner!", "Winner winner chicken dinner!!");
+                counter = 0;
             }//end of if
-            else
+            counter = counter + 1;
+            if(counter ==10)
             {
-                if (turn_count == 9)
-                    MessageBox.Show("Draw", "Nice try!");
-            }//end of else 
+                MessageBox.Show("DRAW", "Nice try");
+                counter = 0;
+            }//end of if
         }//end of weHaveAWinner
-        private void resetButtonClick(object sender, EventArgs e)
-        {
-            Application.Restart();
-                Environment.Exit(0);
-        }
+
         private void exitButtonClick(object sender, EventArgs e)
         {
             this.Close();
@@ -88,6 +82,33 @@ namespace TIC_TAC_TOE_
         private void Form1_Load(object sender, EventArgs e)
         {
             player.controls.play();
+        }
+        private void restartButtonClick(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
+        }
+        private void resetButtonClicked(object sender, EventArgs e)
+        {
+            button_1.Enabled = true;
+            button_2.Enabled = true;
+            button_3.Enabled = true;
+            button_4.Enabled = true;
+            button_5.Enabled = true;
+            button_6.Enabled = true;
+            button_7.Enabled = true;
+            button_8.Enabled = true;
+            button_9.Enabled = true;
+
+            button_1.Text = "";
+            button_2.Text = "";
+            button_3.Text = "";
+            button_4.Text = "";
+            button_5.Text = "";
+            button_6.Text = "";
+            button_7.Text = "";
+            button_8.Text = "";
+            button_9.Text = "";
         }
     }
 }
