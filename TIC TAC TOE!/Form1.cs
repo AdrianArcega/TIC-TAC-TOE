@@ -62,7 +62,6 @@ namespace TIC_TAC_TOE_
                 weHaveAWinner = true;
             if (weHaveAWinner)
             {
-                disablingButtons();
                 String winner = "";
                 if (turn)
                     winner = "O";
@@ -76,29 +75,10 @@ namespace TIC_TAC_TOE_
                     MessageBox.Show("Draw", "Nice try!");
             }//end of else 
         }//end of weHaveAWinner
-        private void disablingButtons()
-        {
-            foreach (Control c in Controls)
-            {
-                    Button x = (Button)c;
-                    x.Enabled = false;
-            }//end foreach
-        }
         private void resetButtonClick(object sender, EventArgs e)
         {
-            turn = true;
-            turn_count = 0;
-
-            try
-            {
-                foreach (Control c in Controls)
-                {
-                    Button x = (Button)c;
-                    x.Enabled = true;
-                    x.Text = "";
-                }//end foreach
-            }//end try
-            catch { }
+            Application.Restart();
+                Environment.Exit(0);
         }
         private void exitButtonClick(object sender, EventArgs e)
         {
