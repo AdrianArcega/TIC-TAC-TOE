@@ -110,5 +110,10 @@ namespace TIC_TAC_TOE_
             button_8.Text = "";
             button_9.Text = "";
         }
+
+        private void aboutButtonClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("A simple tic tac toe game by Adrian A.Arcega", "About");
+        }
     }
 }
