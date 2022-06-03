@@ -67,7 +67,7 @@ namespace TIC_TAC_TOE_
                 counter = 0;
             }//end of if
             counter = counter + 1;
-            if(counter ==10)
+            if(counter ==9)
             {
                 MessageBox.Show("DRAW", "Nice try");
                 counter = 0;
@@ -77,11 +77,6 @@ namespace TIC_TAC_TOE_
         private void exitButtonClick(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            player.controls.play();
         }
         private void restartButtonClick(object sender, EventArgs e)
         {
